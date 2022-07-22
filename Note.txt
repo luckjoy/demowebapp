@@ -1,0 +1,8 @@
+Make sure to change the tomcat-users.xml under conf folder
+
+
+  <role rolename="manager-gui"/>
+  <user username="tomcat" password="admin" roles="manager-gui"/>
+
+For using volume mount from local path
+docker run -p 80:8080 -v D:\Knowledge\docker\samplewar\myvol:/usr/local/tomcat/myvol --name samplewar samplewar
